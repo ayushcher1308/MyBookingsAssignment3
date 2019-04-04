@@ -1,0 +1,29 @@
+<meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+
+<nav class="navbar navbar-expand-sm bg-light navbar-light" style="background-color: rgb(180, 176, 169)">
+  <!-- Brand -->
+  <a class="navbar-brand">BOOKHERE</a>
+
+     <!-- Links -->
+  <ul class="navbar-nav" style="padding-left: 75%">
+
+    <!-- Dropdown -->
+    <div class="dropdown"><li class="nav-item nav-right" >
+      <a class="nav-link dropdown-toggle"  id="navbardrop" data-toggle="dropdown">
+       <b> <img src="https://www.seekpng.com/png/small/41-410093_circled-user-icon-user-profile-icon-png.png" height="40px"/> HELLO {{User | uppercase}}</b>
+      </a>
+<!-- Dropdown menu -->
+      <div class="dropdown-menu">
+          <a class="dropdown-item" (click)=profile()><span class="glyphicon glyphicon-user"></span>  {{User}}-Profile</a>
+        <a class="dropdown-item " (click)=bookings()><span class="glyphicon glyphicon-map-marker"></span>  My Bookings <span class="badge badge-danger">{{tlength}}</span></a>
+        <a class="dropdown-item" (click)=faq()><span class="glyphicon glyphicon-edit"></span> FAQs</a><hr>
+        <a class="dropdown-item" (click)=Logout()><span class="glyphicon glyphicon-log-out"></span><b style="color:rgb(224, 17, 17); font-size:16px;">  LOGOUT</b></a>
+      </div>
+    </li></div>
+  </ul>
+</nav>
+<!-- dynamicHeader -->
+<h3><p class="dynamicHeader">{{header}}</p></h3>

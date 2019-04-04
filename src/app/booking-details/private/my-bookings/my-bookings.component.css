@@ -1,0 +1,14 @@
+.buttons{
+    text-align:center;
+    /* font-size:40px; */
+}
+
+.card{
+    box-shadow: 5px 5px 5px green;
+}
+.buttons .btn:active {
+background-color: green;
+}
+.buttons .btn:focus {
+    background-color: green;
+    }

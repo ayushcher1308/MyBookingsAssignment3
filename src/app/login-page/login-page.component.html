@@ -1,0 +1,32 @@
+<!-- Default form login -->
+<!-- <h1>Login  User</h1><hr> --><br>
+<div class="row"><div class="col-md-4"></div>
+<div class="box col-md-4">
+<form class=" border border-light p-5 login-form" [formGroup]="LoginForm" style="background-color: rgb(227, 237, 236);box-shadow: 5px 10px 8px #888888;" (ngSubmit) = matchCredentials() >
+
+		<p class="h4 mb-4 text-center">SIGN IN</p><hr>
+	
+		<!-- Email -->
+		<input type="email" id="defaultLoginFormEmail" class="form-control mb-2" placeholder="E-mail" formControlName="emailid">
+		<!-- Email Validation -->
+		<span *ngIf=" (LoginForm.get('emailid').touched ||
+		LoginForm.get('emailid').dirty) && LoginForm.get('emailid').invalid">
+			<span *ngIf="LoginForm.get('emailid').errors.required" style="color:red;font-size:13px">*Email is required</span>
+			<span *ngIf="LoginForm.get('emailid').errors.email" style="color:red;font-size:13px">*Email must be a valid email address</span>
+		</span><br>
+		<!-- Password -->
+		<input type="password" id="defaultLoginFormPassword" class="form-control mb-2" placeholder="Password" formControlName="password">
+		<!-- Password Validation -->
+		<span *ngIf=" (LoginForm.get('password').touched ||
+		LoginForm.get('password').dirty) && LoginForm.get('password').invalid">
+			<span *ngIf="LoginForm.get('password').errors.required" style="color:red;font-size:13px" >*Password is required</span>
+			<span *ngIf="LoginForm.get('password').errors.minlength" style="color:red;font-size:13px">*Password must be of minimum 6 characters</span>
+		</span><br>
+		<!-- Sign in button -->
+		<button class="btn btn-info btn-block my-4" type="submit" [disabled]="LoginForm.invalid">SIGN IN</button>
+		<br>
+		<p>Not a User?  <a routerLink="">Create account</a></p>
+	</form>
+
+</div></div>
+	<!-- Default form login -->

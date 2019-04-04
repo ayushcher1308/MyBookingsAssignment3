@@ -1,0 +1,86 @@
+<!-- Default form register -->
+
+<div class="row"><div class="col-md-2"></div>
+<div class="col-md-8 border-light">
+<form class=" border  p-3 login-form" [formGroup]="RegisterForm" style="background-color:rgb(227, 237, 236);box-shadow: 5px 10px 8px #888888;" (ngSubmit) = registerUser(RegisterForm.value) >
+    <h4 style="text-align:center"><b>Register User</b></h4><hr>
+  <div class="row"><div class="col-md-6">
+    <!-- First Name -->
+    <p style="font-size:16px ">FIRST NAME:</p>
+    <input type="firstname" class="form-control mb-0" placeholder="First Name" formControlName="firstname">
+    <!-- first name Validation -->
+		<span *ngIf=" (RegisterForm.get('firstname').touched ||
+		RegisterForm.get('firstname').dirty) && RegisterForm.get('firstname').invalid">
+			<span *ngIf="RegisterForm.get('firstname').errors.required" style="color:red;font-size:13px">*First Name is required</span>
+    </span>
+    
+    <br>
+     <!-- Email  -->
+     <p style="font-size:16px ">EMAIL ADDRESS:</p>
+     <input type="email" class="form-control mb-0" placeholder="Email ID" formControlName="emailid">
+     <!-- email vliadtion -->
+     <span *ngIf=" (RegisterForm.get('emailid').touched ||
+		RegisterForm.get('emailid').dirty) && RegisterForm.get('emailid').invalid">
+      <span *ngIf="RegisterForm.get('emailid').errors.required" style="color:red;font-size:13px">*Email is required</span>
+      <span *ngIf="RegisterForm.get('emailid').errors.email" style="color:red;font-size:13px">*Email must be a valid email address</span>
+    </span>
+    <br>
+    <!-- Address  -->
+    <p style="font-size:16px ">ADDRESS:</p>
+    <input type="address" class="form-control mb-0" placeholder="Address" formControlName="address">
+    <!-- Address Validation -->
+		<span *ngIf=" (RegisterForm.get('address').touched ||
+		RegisterForm.get('address').dirty) && RegisterForm.get('address').invalid">
+			<span *ngIf="RegisterForm.get('address').errors.required" style="color:red;font-size:13px">*Address is required</span>
+    </span>
+    <br>
+    <!-- password  -->
+    <p style="font-size:16px ">PASSWORD:</p>
+    <input type="password" class="form-control mb-0" placeholder="Password" formControlName="password">
+    <span *ngIf=" (RegisterForm.get('password').touched ||
+		RegisterForm.get('password').dirty) && RegisterForm.get('password').invalid">
+      <span *ngIf="RegisterForm.get('password').errors.required" style="color:red;font-size:13px">*Password is required</span>
+      
+    </span>
+  </div>
+
+  <div class="col-md-6">
+    <!-- Last Name -->
+    <p style="font-size:16px ">LAST NAME:</p>
+    <input type="lastname" class="form-control mb-0" placeholder="Last Name" formControlName="lastname">
+     <!-- last name Validation -->
+		<span *ngIf=" (RegisterForm.get('lastname').touched ||
+		RegisterForm.get('lastname').dirty) && RegisterForm.get('lastname').invalid">
+			<span *ngIf="RegisterForm.get('lastname').errors.required" style="color:red;font-size:13px">*Last Name is required</span>
+		</span>
+    <br>
+     <!-- phone no  -->
+     <p style="font-size:16px ">PHONE:</p>
+     <input type="phoneno" class="form-control mb-0" placeholder="Phone Number" formControlName="phoneno">
+     <!-- phone no Validation -->
+     <span *ngIf=" (RegisterForm.get('phoneno').touched ||
+     RegisterForm.get('phoneno').dirty) && RegisterForm.get('phoneno').invalid">
+       <span *ngIf="RegisterForm.get('phoneno').errors.required" style="color:red;font-size:13px">*Phone Number is required</span>
+       <span *ngIf="RegisterForm.get('phoneno').errors.pattern" style="color:red;font-size:13px">*Phone number is not valid</span>
+     </span>
+    <br>
+    <!-- Medical  -->
+    <p style="font-size:16px ">MEDICAL HISTORY(OPTIONAL)</p>
+    <input type="medical" class="form-control mb-0" placeholder="Medical History" formControlName="medical">
+    <br>
+    <!-- confirm password  -->
+    <p style="font-size:16px ">CONFIRM PASSOWRD:</p>
+    <input type="password" class="form-control mb-0" placeholder="Confirm Password" formControlName="cpassword">
+    <span *ngIf=" (RegisterForm.get('cpassword').touched ||
+		RegisterForm.get('cpassword').dirty) && RegisterForm.get('cpassword').invalid">
+      <span *ngIf="RegisterForm.get('cpassword').errors.required" style="color:red;font-size:13px">*Confirm Password is required</span>
+      <span *ngIf="RegisterForm.get('cpassword').errors.mustMatch" style="color:red;font-size:13px">*Password and Confirm Password must match</span>
+    </span>
+  </div></div>
+  <div class="row"><div class="col-md-4"></div>
+  <div class="col-md-4"><button class="btn btn-info btn-block my-4 submitbtn" type="submit" [disabled]="RegisterForm.invalid">REGISTER</button></div></div>
+  <p style="text-align: center">*Already a User:<a routerLink="signin">Login Here</a></p>  
+</form>
+
+</div></div>
+  <!-- Default form login -->

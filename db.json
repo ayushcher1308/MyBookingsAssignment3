@@ -1,0 +1,262 @@
+{
+  "posts": [
+    {
+      "id": 1,
+      "title": "json-server",
+      "author": "typicode"
+    }
+  ],
+  "comments": [
+    {
+      "id": 1,
+      "body": "some comment",
+      "postId": 1
+    }
+  ],
+  "profile": [
+    {
+      "firstname": "Saksham",
+      "lastname": "Gupta",
+      "emailid": "ayush@hh.com",
+      "phoneno": "9315456491",
+      "medical": "aot",
+      "address": "84",
+      "password": "123456",
+      "cpassword": "123456",
+      "id": 4
+    },
+    {
+      "firstname": "Ayush Cherkhi",
+      "lastname": "Cherkhiya",
+      "emailid": "ayush@123",
+      "phoneno": "8375986544",
+      "medical": "NA",
+      "address": "A-10, Jaypee Institute Of information Technology",
+      "id": 5
+    },
+    {
+      "firstname": "Ayush",
+      "lastname": "Cher",
+      "emailid": "ayushcherkhiya08@gmail.com",
+      "address": "A-10, Jaypee Institute Of information Technology",
+      "phoneno": "8376829559",
+      "password": "456123",
+      "medical": "",
+      "cpassword": "456123",
+      "id": 6
+    },
+    {
+      "firstname": "Ayush",
+      "lastname": "CH",
+      "emailid": "ayushcherkhiya08@gmail.com",
+      "address": "House no. 7",
+      "phoneno": "8376829559",
+      "password": "456123",
+      "medical": "",
+      "cpassword": "456123",
+      "id": 7
+    },
+    {
+      "firstname": "ssd",
+      "lastname": "Ayush",
+      "emailid": "dsd@jjs",
+      "address": "House no. 7",
+      "phoneno": "8376829559",
+      "password": "123456",
+      "medical": "",
+      "cpassword": "123456",
+      "id": 8
+    },
+    {
+      "firstname": "Ayush",
+      "lastname": "Cherkhiya",
+      "emailid": "ayushcherkhiya08@gmail.com",
+      "phoneno": "8376829559",
+      "medical": "",
+      "address": "A-10, Jaypee Institute Of information Technology",
+      "password": "123456",
+      "cpassword": "123456",
+      "id": 9
+    },
+    {
+      "firstname": "ayus",
+      "lastname": "cher",
+      "emailid": "ayushcherkhiya08@gmail.com",
+      "address": "A-10, Jaypee Institute Of information Technology",
+      "phoneno": "8376829559",
+      "password": "123456",
+      "medical": "",
+      "cpassword": "123456",
+      "id": 10
+    },
+    {
+      "firstname": "ayus",
+      "lastname": "cher",
+      "emailid": "ayushcherkhiya08@gmail.com",
+      "address": "A-10, Jaypee Institute Of information Technology",
+      "phoneno": "8376829559",
+      "password": "123456",
+      "medical": "",
+      "cpassword": "123456",
+      "id": 11
+    },
+    {
+      "firstname": "ayus",
+      "lastname": "cher",
+      "emailid": "ayushcherkhiya08@gmail.com",
+      "address": "A-10, Jaypee Institute Of information Technology",
+      "phoneno": "8376829559",
+      "password": "123456",
+      "medical": "NA",
+      "cpassword": "123456",
+      "id": 12
+    },
+    {
+      "firstname": "ayusu",
+      "lastname": "hjkjq",
+      "emailid": "ayushcherkhiya08@gmail.com",
+      "address": "A-10, Jaypee Institute Of information Technology",
+      "phoneno": "8376829559",
+      "password": "123456",
+      "medical": "NA",
+      "cpassword": "123456",
+      "id": 13
+    },
+    {
+      "firstname": "Ayush",
+      "lastname": "Cherkhiya",
+      "emailid": "ayush@qwer",
+      "address": "84 28A",
+      "phoneno": "9315456491",
+      "password": "qwerty",
+      "medical": "NA",
+      "cpassword": "qwerty",
+      "id": 14
+    },
+    {
+      "firstname": "Ayush Cherkhiya",
+      "lastname": "Cherkhiya",
+      "emailid": "ayush@gmail",
+      "phoneno": "8376829559",
+      "medical": "NA",
+      "address": "House no. 7",
+      "id": 15
+    },
+    {
+      "firstname": "Saksham",
+      "lastname": "Gupta",
+      "emailid": "saksham@123",
+      "address": "cdcl",
+      "phoneno": "8695654265",
+      "password": "qwerty",
+      "medical": "cycle",
+      "cpassword": "qwerty",
+      "id": 16
+    },
+    {
+      "firstname": "Paras",
+      "lastname": "qwert",
+      "emailid": "paras@123",
+      "phoneno": "8376829559",
+      "medical": "nsjsn",
+      "address": "A-10, Jaypee Institute Of information Technology",
+      "password": "123456",
+      "cpassword": "123456",
+      "id": 17
+    },
+    {
+      "firstname": "Aaayush",
+      "lastname": "Cherkhi",
+      "emailid": "ayush@gmail",
+      "phoneno": "8376829561",
+      "medical": "not any",
+      "address": "CD",
+      "password": "123456",
+      "cpassword": "123456",
+      "id": 18
+    },
+    {
+      "0": {
+        "firstname": "AAde",
+        "lastname": "singh",
+        "emailid": "aadesh@123",
+        "phoneno": "8697584624",
+        "medical": "NA",
+        "address": "cdcl",
+        "password": "123456",
+        "cpassword": "123456"
+      },
+      "id": 19
+    },
+    {
+      "firstname": "Ayush",
+      "lastname": "Cherk",
+      "emailid": "ayush@789",
+      "phoneno": "8376829557",
+      "medical": "NA",
+      "address": "CDCL Building",
+      "password": "123456",
+      "cpassword": "123456",
+      "id": 20
+    }
+  ],
+  "Bookings": [
+    {
+      "Upcoming": [
+        {
+          "date": "27 AUG 2019, 09:00am",
+          "name": "The Hound, Khal Drogo",
+          "address": "South Of the Wall",
+          "status": "Pending"
+        },
+        {
+          "date": "17 APR 2019, 09:00am",
+          "name": "Jon Snow, Targerian",
+          "address": "King in the North",
+          "status": "On the Way"
+        },
+        {
+          "date": "27 AUG 2019, 09:00am",
+          "name": "The Hound, Khal Drogo",
+          "address": "South Of the Wall",
+          "status": "Pending"
+        }
+      ],
+      "id": "Upcoming"
+    },
+    {
+      "Past": [
+        {
+          "date": "17 APR 2019, 09:00am",
+          "name": "Jon Snow, Targerian",
+          "address": "King in the North",
+          "status": "Completed"
+        },
+        {
+          "date": "27 AUG 2019, 09:00am",
+          "name": "The Hound, Khal Drogo",
+          "address": "South Of the Wall",
+          "status": "Completed"
+        }
+      ],
+      "id": "Past"
+    }
+  ],
+  "faqs": [
+    {
+      "id": "1",
+      "ques": "How will I be able to chat with the customer support?",
+      "myfaq": "You may use Net Banking, Credit/Debit Cards, PhonePe wallet. However Cash on delivery International Cards Gift Cards are not acceptable modes of payment. The acceptable payment methods shall be visible to you at the checkout."
+    },
+    {
+      "id": "2",
+      "ques": "Why am not able to access payment gateway?",
+      "myfaq": " Please click on this link to chat with the customer care and our customer care executive will help you with your query within 12 hrs."
+    },
+    {
+      "id": "3",
+      "ques": "How to link my PayTm wallet?",
+      "myfaq": "When you chose to link it will check wether your mobile number is registered with any banks. After checking the bank accounts linked to your mobile number will be displayed. You have to select your bank and have to set a UPI pin( in case you are not registered with BHIM UPI). If you're an existing BHIM customer then you have to verify with your BHIM pin as well as OTP to your mobile.Now Paytm will provide you a UPI address linked to your bank account."
+    }
+  ]
+}

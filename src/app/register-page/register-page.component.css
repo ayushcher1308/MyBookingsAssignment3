@@ -1,0 +1,21 @@
+@import "~bootstrap/dist/css/bootstrap.css";
+
+p{
+    color:rgb(75, 85, 102);
+}
+
+.submitbtn
+{
+    width:200px;
+    text-align: center;
+}
+
+h1
+{
+    text-align: center;
+}
+
+.loginhere{
+    text-align: center;
+    font-size: 15px;
+}

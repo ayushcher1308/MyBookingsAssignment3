@@ -1,0 +1,22 @@
+<app-navbar-profile></app-navbar-profile>
+    <div class="container"> 
+        <div id="accordion" class="accordion"> 
+        <div class="card mb-0" *ngFor="let x of faq"> 
+        <a class="card-header collapsed" data-toggle="collapse" href="#collapseOne{{x.id}}"> 
+        <div class="card-title"> 
+        {{x.id}} {{x.ques}}
+        </div> 
+        </a> 
+        <div id="collapseOne{{x.id}}" class="card-body collapse" data-parent="#accordion" > 
+        <p>{{x.myfaq}}</p> 
+      
+        </div> 
+        
+        </div> 
+        </div> 
+        </div>
+    
+
+ <div >
+  
+ </div>

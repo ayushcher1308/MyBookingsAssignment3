@@ -1,0 +1,29 @@
+<app-navbar-profile></app-navbar-profile>
+<div class="buttons">
+<button type="button" class="btn btn-light"  style="font-size:20px" (click)="UpBooking()">Upcoming</button>
+<button type="button" class="btn btn-light" style="font-size:20px" (click)="PastBooking()">Past</button></div><br>
+<div class="container" *ngIf="upbooking">
+  <div *ngFor = "let booking of Upcoming">
+    <div class="card">
+      <div class="card-body">
+        <p>{{booking.date}}</p>
+        <p style="float:right" [ngStyle]="{'color':booking.status === 'Pending' ? 'red' : 'blue'}"><b>{{booking.status | uppercase}}</b></p>
+        <h4>{{booking.name}}</h4>
+        <p>{{booking.address}}</p>
+      </div>
+    </div><br>
+  </div>
+</div>
+
+<div class="container" *ngIf="pastbooking">
+    <div *ngFor = "let booking of Past">
+      <div class="card">
+        <div class="card-body">
+          <p>{{booking.date}}</p>
+          <p style="float:right" [ngStyle]="{'color':booking.status === 'Completed' ? 'green' : 'blue'}"><b>{{booking.status | uppercase}}</b></p>
+          <h4>{{booking.name}}</h4>
+          <p>{{booking.address}}</p>
+        </div>
+      </div><br>
+    </div>
+  </div>
