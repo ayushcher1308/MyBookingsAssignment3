@@ -43,7 +43,7 @@ tlength;
   {
     console.log("logout");
     localStorage.clear();
-    this.router.navigate(['']);
+    this.route.navigate(['']);
   }
 
   bookings()
